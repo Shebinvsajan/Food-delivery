@@ -1,0 +1,44 @@
+const express = require('express');
+const { v4: uuidv4 } = require('uuid');
+const  Stripe = require('stripe')('sk_test_51NHRUISDvhvYrutlznG3ULfYSuLHUSDj65Dd3QsHbEnEhvIV6m5TWlOmxlph8IMN48R5uXADejHxw6r8Y7sA0Eab00BR6fFmo7');
+const router = express.Router()
+
+
+router.post("/placeorder", async(req,res)=>{
+
+    const {token , total , currentUser , CartItems}= req.body
+
+    try {
+        const customer = await Stripe.customers.create({
+            email:token.email,
+            source:token.id
+
+
+        })
+        const payment = await Stripe.charges.create({
+            amount:total*100,
+            currency:'INR',
+            customer:customer.id,
+            receipt_email:token.email
+        },{
+
+            idempotencyKey: uuidv4(),
+        })
+
+        if(payment){
+            res.send('paymeny done in router')
+        }else{
+            res.send('paymeny faild in router')
+
+        }
+    } catch (error) {
+
+        return res.status(404).json({message:"something went wrong"+ error})
+        
+    }
+
+
+});
+
+
+module.exports=router
