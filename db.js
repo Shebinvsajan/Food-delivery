@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-var mongoUrl = "mongodb+srv://shebinvsajan5:Doctor123@cluster0.ucatzji.mongodb.net/food";
-mongoose.connect(mongoUrl, {  useUnifiedTopology: true,useNewUrlParser: true });
+require('dotenv').config();
+mongoose.connect(process.env.MONGO_URL , {  useUnifiedTopology: true,useNewUrlParser: true });
 var db = mongoose.connection;
 
 db.on('connected', () => {
@@ -12,3 +12,8 @@ db.on('error', (error) => {
 });
 
 module.exports = mongoose;
+
+
+
+
+

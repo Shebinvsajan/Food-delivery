@@ -8,6 +8,8 @@ const menuRoute = require('./routes/menuRoute.js');
 const userRoute = require('./routes/userRoute.js');
 const loginRoute = require('./routes/loginRoute.js');
 
+
+
 // Middleware
 app.use(cors({origin: '*'}))
 app.use(express.json());
