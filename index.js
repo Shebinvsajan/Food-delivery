@@ -7,7 +7,11 @@ const port = 8000;
 const menuRoute = require('./routes/menuRoute.js');
 const userRoute = require('./routes/userRoute.js');
 const loginRoute = require('./routes/loginRoute.js');
+const path = require("path");
 
+
+// for react static files
+app.use(express.static("dist"));
 
 
 // Middleware
@@ -22,6 +26,12 @@ app.get('/', (req, res) => {
 app.use('/api/menu/', menuRoute);
 app.use('/api/users/', userRoute);
 app.use('/api/user/', loginRoute);
+
+// for render react static files
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(path.resolve(`${path.dirname("")}/dist/index.html`)));
+});
+
 
 // Start the server
 app.listen(port, () => {
