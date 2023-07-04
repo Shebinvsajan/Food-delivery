@@ -1,0 +1,70 @@
+
+.carousel-container .custom-carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-container {
+    max-height: 20rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-container .custom-carousel {
+    max-height: 20rem;
+  }
+  
+  
+  .carousel-container .custom-carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-container .custom-carousel .carousel-caption {
+    position: absolute;
+
+    top: 7rem;
+    color: #fff;
+    padding: 10px;
+  }
+  .foot{
+    margin-bottom: 5rem;
+  }
+  
+  @media (min-width: 992px) {
+    .carousel-container {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .carousel-container {
+        max-height: 40rem;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .carousel-container .custom-carousel {
+        max-height: 40rem;
+      }
+      
+      
+      .carousel-container .custom-carousel .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      
+      .carousel-container .custom-carousel .carousel-caption {
+        position: absolute;
+   
+        top: 25rem;
+        color: #fff;
+        padding: 10px;
+      }
+      
+  }  
+  
+.nav-margin{
+  margin-top:  7rem;
+}
+  

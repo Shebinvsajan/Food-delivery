@@ -1,0 +1,17 @@
+.food-head{
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    
+}
+.food-img{
+    width: 15rem;
+    height: 20rem;
+}
+.head{
+    margin-top: 3rem;
+}
+.flex-container{
+    display: flex;
+}
+

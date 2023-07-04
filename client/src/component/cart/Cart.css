@@ -1,0 +1,28 @@
+.nav-margin{
+    margin-top:  10rem;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .collum {
+    position: relative;
+   
+  }
+  
+  .collum .fa-trash-can {
+    position: absolute;
+    bottom: 2rem;
+    right: 2.625rem;
+  }
+  @media (max-width: 768px) {
+    .center {
+      text-align: center;
+    }
+    .collum .fa-trash-can {
+      position: absolute;
+      bottom: 1rem;
+      right: 1em;
+    }
+  }

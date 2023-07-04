@@ -1,0 +1,80 @@
+.logo-image {
+    width: 100px;
+  }
+  .centered-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .centered-nav .nav-link {
+    margin: 0 25px; /* Adjust the margin value to increase or decrease the gap */
+    color: black;
+  }
+  .centered-nav .nav-link:hover {
+    margin: 0 25px; /* Adjust the margin value to increase or decrease the gap */
+    color: #FFC823;
+  }
+  .nav-text .nav-link {
+    color: black;
+  }
+  .nav-text .nav-link:hover {
+    color: #f79f12;
+  }
+.icon{
+  padding: 3px 1rem 0px 0px ;
+  font-size: 1rem;
+ 
+}
+.second-icons {
+
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  border-top: 1px solid #0a0909; 
+  background-color: #fff;
+  z-index: 1;
+
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+               
+
+
+.cartno {
+  background-color: #e3af14;
+  color: white;
+  border-radius: 20px 5px 20px 20px;
+padding: 3px;
+margin: 0px 0px 5px 3px;
+
+}
+.logo{
+  height: 2rem;
+  width: 2rem;
+  padding: 0px 3px 0px 2px;
+}
+
+.drop .dropdown-toggle {
+  padding: 0.5rem 0.5rem;
+  font-size: 0.8rem;
+}
+.scartno{
+  background-color: #e3af14;
+  border-radius: 40%;
+  padding: 3px;
+
+  color: white;
+position: absolute;
+top: 6px;
+right: 6.8rem;
+}
